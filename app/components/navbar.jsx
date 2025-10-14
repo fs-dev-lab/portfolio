@@ -2,11 +2,8 @@
 
 import Link from "next/link";
 import { personalData } from "@/utils/data/personal-data";
-import useCurrentHash from "@/hooks/useCurrentHash";
 
 function Navbar() {
-  const currentHash = useCurrentHash();
-
   const links = [
     ["ABOUT", "/#about"],
     ["EXPERIENCE", "/#experience"],
@@ -28,9 +25,6 @@ function Navbar() {
 
         <ul className="flex flex-col md:flex-row items-start md:items-center text-sm space-y-4 md:space-y-0 md:space-x-6">
           {links.map(([label, href]) => {
-            const fragment = href.includes("#") ? `#${href.split("#")[1]}` : "";
-            const isActive = currentHash === fragment;
-
             return (
               <li key={label}>
                 <Link
