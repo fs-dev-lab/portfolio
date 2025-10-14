@@ -3,10 +3,9 @@
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 
-
 function AboutSection() {
   return (
-    <div id="about" className="my-12 lg:my-16 relative">
+    <div id="about" className="my-12 lg:my-16 relative scroll-mt-[140px]">
       <div className="hidden lg:flex flex-col items-center absolute top-16 -right-8">
         <span className="bg-[#1a1443] w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">
           ABOUT ME
@@ -21,7 +20,7 @@ function AboutSection() {
           <p className="text-gray-200 text-sm lg:text-xl">
             {personalData.description1}
           </p>
-           <p className="text-gray-200 text-sm lg:text-xl">
+          <p className="text-gray-200 text-sm lg:text-xl">
             {personalData.description2}
           </p>
         </div>
@@ -37,6 +36,6 @@ function AboutSection() {
       </div>
     </div>
   );
-};
+}
 
 export default AboutSection;

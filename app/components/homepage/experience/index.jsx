@@ -15,7 +15,10 @@ const Experience = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div id="experience" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
+    <div
+      id="experience"
+      className="relative z-50 border-t my-12 lg:my-24 border-[#25213b] scroll-mt-[70px]"
+    >
       <Image
         src="/section.svg"
         alt="Hero"
@@ -49,11 +52,14 @@ const Experience = () => {
             <div
               key={index}
               className={`flex items-center w-full ${
-                isLeft ? 'justify-start' : 'justify-end'
+                isLeft ? "justify-start" : "justify-end"
               } relative`}
             >
               <div className="w-full md:w-1/2 px-4">
-                <GlowCard key={experience.id} identifier={`experience-${experience.id}`}>
+                <GlowCard
+                  key={experience.id}
+                  identifier={`experience-${experience.id}`}
+                >
                   <div className="p-3 relative">
                     <Image
                       src="/blur-23.svg"
@@ -79,12 +85,17 @@ const Experience = () => {
                           {experience.company}
                         </p>
                         <ul className="space-y-1">
-                        {(experience?.descriptions || []).map((desc, index) => (
-                          <li key={index} className="flex items-start gap-2">
-                            <span className="mt-3 w-1 h-1 bg-white rounded-full shrink-0"></span>
-                            <span>{desc}</span>
-                          </li>
-                        ))}
+                          {(experience?.descriptions || []).map(
+                            (desc, index) => (
+                              <li
+                                key={index}
+                                className="flex items-start gap-2"
+                              >
+                                <span className="mt-3 w-1 h-1 bg-white rounded-full shrink-0"></span>
+                                <span>{desc}</span>
+                              </li>
+                            )
+                          )}
                         </ul>
                       </div>
                     </div>
