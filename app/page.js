@@ -12,9 +12,9 @@ export default async function Home() {
   const blogs = [];
 
   return (
-    <div suppressHydrationWarning >
+    <div suppressHydrationWarning>
       <HeroSection />
-      <AboutSection />
+      {/* <AboutSection /> */}
       <Experience />
       <Skills />
       <Projects />
@@ -22,5 +22,5 @@ export default async function Home() {
       <Blog blogs={blogs} />
       <ContactSection />
     </div>
-  )
-};
+  );
+}

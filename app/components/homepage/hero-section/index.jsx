@@ -103,6 +103,14 @@ function HeroSection() {
                 <span className="text-amber-300">{personalData.name}</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
+              <div>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">
+                  experience:
+                </span>
+                <span className="text-gray-400">{`'`}</span>
+                <span className="text-amber-300">{"7 years"}</span>
+                <span className="text-gray-400">{`',`}</span>
+              </div>
               <div className="ml-4 lg:ml-8 mr-2">
                 <span className=" text-white">skills:</span>
                 <span className="text-gray-400">{`['`}</span>

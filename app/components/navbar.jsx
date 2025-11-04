@@ -5,7 +5,6 @@ import { personalData } from "@/utils/data/personal-data";
 
 function Navbar() {
   const links = [
-    ["ABOUT", "/#about"],
     ["EXPERIENCE", "/#experience"],
     ["SKILLS", "/#skills"],
     ["PROJECTS", "/#projects"],
